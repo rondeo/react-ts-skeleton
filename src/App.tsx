@@ -14,22 +14,22 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-       
+
         <Router>
-            <div>
-               <h2>Welcome to React Router </h2>
-               <ul>
-                  <li><Link to={'/'}>Home</Link></li>
-                  <li><Link to={'/Login'}>Login</Link></li>
-               </ul>
-               <hr />
-               
-               <Switch>
-                  <Route exact={true} path="/" component={Home} />
-                  <Route exact={true} path="/Login" component={Login} />
-               </Switch>
-            </div>
-         </Router>
+          <div>
+            <h2>Welcome to React Router </h2>
+            <ul>
+              <li><Link to={'/'}>Home</Link></li>
+              <li><Link to={'/Login'}>Login</Link></li>
+            </ul>
+            <hr />
+
+            <Switch>
+              <Route exact={true} path="/" component={Home} />
+              <Route exact={true} path="/Login" component={Login} />
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
   }
